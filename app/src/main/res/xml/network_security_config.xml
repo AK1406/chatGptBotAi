@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--  <base-config cleartextTrafficPermitted="false">
+          <trust-anchors>
+              <certificates src="system" />
+          </trust-anchors>
+          <tls-version min="TLSv1.2" max="TLSv1.3" />
+          <cipher-suites>
+              <cipher-suite name="TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256"/>
+              <cipher-suite name="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"/>
+          </cipher-suites>
+      </base-config>-->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">api.openai.com</domain>
+    </domain-config>
+</network-security-config>
