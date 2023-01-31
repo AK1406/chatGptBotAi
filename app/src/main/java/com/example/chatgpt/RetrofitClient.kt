@@ -22,7 +22,7 @@ object RetrofitClient {
             requestBuilder.header("Content-Type", "application/json")
             requestBuilder.header(
                 "Authorization",
-                "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"
+                "YOUR API KEY"
             )
             chain.proceed(requestBuilder.build())
         })*/
